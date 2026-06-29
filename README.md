@@ -100,6 +100,10 @@ export ANTHROPIC_API_KEY=sk-ant-...    # generations now hit claude-opus-4-8
 The demo traffic deliberately includes a refusal, an empty response, an ungrounded answer,
 and a failed request — so the eval pass rates and error rate are non-trivial out of the box.
 
+> **Honest caveat (demo-scale):** offline, cost reads ~$0 (mock pricing; real tokens/cost only
+> against Claude) and groundedness is a lexical word-overlap heuristic, not an entailment/judge
+> model — so these numbers are illustrative, not measured production reality.
+
 ---
 
 ## Repo layout
